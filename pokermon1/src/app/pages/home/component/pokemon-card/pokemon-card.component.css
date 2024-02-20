@@ -1,0 +1,14 @@
+.card-item {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+.pokemon-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<main>
+  <div class="card-container">
+    <app-pokemon-card
+      *ngFor="let pokemon of pokemonLists"
+      [pokemon]="pokemon"
+      (click)="onPokemonClick(pokemon)"
+    />
+  </div>
+</main>
