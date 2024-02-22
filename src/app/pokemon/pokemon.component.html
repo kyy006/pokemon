@@ -1,0 +1,12 @@
+<div class = "prompt">
+  <h1>SELECT YOUR POKEMON!</h1>
+</div>
+<div class="pokemon-container" [class.selected]="selected">
+  <div *ngFor="let pokemon of pokemons" class="pokemon-card" (click)="selectCard(pokemon)">
+    <h2>{{ pokemon.name | uppercase }}</h2>
+    <img [src]="pokemon.image" alt="{{ pokemon.name }}">
+    <p><b>Height: </b>{{ pokemon.height }}0 cm</p>
+    <p><b>Weight: </b> {{ pokemon.weight }}00 g</p>
+    <p><b>Type: </b>{{ pokemon.types.join('  ') }}</p>
+  </div>
+</div>
